@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Задача 3.1</title>
+</head>
+<body>
+    <script>
+        let min=1
+let max=parseInt(prompt("Введіть кількість квадратів"))
+let result =min + Math.floor(Math.random() * (max - min + 1));
+let userShot=parseInt(prompt("Введіть номер клітинки"))
+let result1=result+1;
+let result2=result-1;
+let result3 = result2 + Math.floor(Math.random() * (result1 - result2 + 1));
+switch (userShot) {
+    case  result:
+        alert(`Корабль уничтожен`)
+        break
+        case result1:alert(`Корабель повреждён`)
+        break
+        case result2:alert(`Корабль повреждён`)
+        break
+        default:alert(`Корабль цел `)
+        break
+    }
+    let userShot2=parseInt(prompt("Введіть номер клітинки"))
+switch (userShot2) {
+    case  result:
+        alert(`Корабль уничтожен`)
+        break
+case result1:alert(`Корабель повреждён`)
+break
+        case result2:alert(`Корабль повреждён`)
+        break
+        default:alert(`Корабль цел`)
+        break
+}
+if (userShot != result) {
+        result=result3
+}
+
+    </script>
+</body>
+</html>

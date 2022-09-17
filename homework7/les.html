@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Завдання 1-6</title>
+    <script></script>
+</head>
+<body>
+   <p align="center">Завдання 1</p>
+   <script>
+    {
+    let firstNumber=parseFloat(prompt("Введіть перше дійсне число.Завдання 1"))
+    let secondNumber=parseFloat(prompt("Введіть друге дійсне число.Завдання 1"))
+    let sum=firstNumber+secondNumber
+    let plural=firstNumber*secondNumber
+    let fraction=firstNumber/secondNumber
+    document.write(`<table border="2px">
+<tr>
+    <td>Сумма:${sum}</td>
+</tr>
+<tr>
+    <td>Добуток:${plural}</td>
+</tr>
+<tr>
+    <td>Частка:${fraction}</td>
+</tr>
+    </table>`);
+}
+   </script>
+   <p align="center">Завдання 2</p>
+   <script>
+    {
+    let a=parseInt(prompt("Введіть рік народження.Завдання 2")) //Пуска a=вводится с клавиатуры год рождение
+    let b=2022 //Пускай b=2022
+    let x=b-a //Пуска x=b-a
+    document.write(`Людині: ${x}років`) //Отобразить на єкране количество лет 
+}
+   </script>
+   <p align="center">Завдання 3</p>
+   <script>
+    {
+    let price=parseFloat(prompt("Введіть ціну товару(грн).Завдання 3"))
+    let much=parseInt(prompt("Введіть кількість товару(шт).Завдання 3"))
+    let result=price*much
+    document.write(`Загальна вартість:${result}грн`)
+}
+   </script>
+   <p align="center">Завдання 4</p>
+  <script>
+    {
+    let lenght=parseInt(prompt("Введіть довжину(см).Завдання 4"))
+    let m=lenght*0.01
+    let km=lenght*0.001
+    document.write(`В метрах:${m} <br> В километрах:${km}`)
+}
+  </script>
+<p align="center">Завдання 5</p>
+<script>
+    {
+    let second=parseInt(prompt("Введіть кількість секунд.Завдання 5"))
+let minutes=second/60
+let hours=second/3600
+document.write(`Минут:${minutes.toFixed(2)} <br> Годин:${hours.toFixed(2)}`)
+}
+</script>
+<script src="./les.js"></script>
+</body>
+</html>
